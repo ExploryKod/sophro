@@ -51,11 +51,23 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Merriweather', serif;
   color: var(--on-background-alt);
-  font-size: 24px;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  line-height: 25px;
 }
 
 ul {
@@ -98,8 +110,8 @@ a:focus {
   text-align: center;
 }
 
-/* About Section */
-.about-container {
+/* steps Section */
+.steps-container {
   display: flex;
 }
 
@@ -119,6 +131,12 @@ img {
 }
 
 /* Steps Section */
+
+.buttons-title {
+  margin-top: 15px;
+  font-style: italic;
+}
+
 .buttons {
   margin-top: 15px;
   margin-bottom: 50px;
@@ -172,18 +190,13 @@ button:hover:not(.outline) {
 
 .text-box {
   width: 40%;
+  margin: 0 auto;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
   color: var(--on-primary);
   border-radius: 10px;
   padding: 30px;
 }
-
-p {
-  margin: 0;
-  line-height: 25px;
-}
-
 
 li.steps {
   font-family: 'Merriweather', serif;
