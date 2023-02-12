@@ -130,6 +130,20 @@ a:focus {
   cursor: pointer;
 }
 
+.image-container i {
+  font-size: 18px;
+  padding: 10px;
+  color: var(--primary-color);
+  border: 1px solid var(--on-background-alt);
+  border-radius: 6px;
+}
+
+.image-container:hover i {
+  background-color: var(--on-background-alt);
+  color: white;
+  border: transparent;
+}
+
 .image-container:hover { 
   box-shadow: none;
   transform: translateY(-10%);
