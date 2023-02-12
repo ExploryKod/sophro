@@ -24,16 +24,19 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Merriweather', serif;
 }
 
 main { 
   width: 100%;
-  background-color: #fafafa;
+  color: var(--on-background);
+  background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23424242' fill-opacity='0.1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
 }
 
@@ -112,6 +115,7 @@ a:focus {
 
 /* steps Section */
 .steps-container {
+  margin-top: 100px;
   display: flex;
 }
 
@@ -123,6 +127,12 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.image-container:hover { 
+  box-shadow: none;
+  transform: translateY(-10%);
 }
 
 img {
@@ -194,6 +204,7 @@ button:hover:not(.outline) {
   text-align: justify;
   background: rgb(0 0 0 / 50%);
   color: var(--on-primary);
+  background-color: var(--on-background);
   border-radius: 10px;
   padding: 30px;
 }
@@ -208,14 +219,14 @@ li.steps {
 
 
 /* Contact Section */
-.fab {
-  font-size: 100px;
-  margin-right: 50px;
+.social-icons i {
+  font-size: 50px;
+  margin-right: 25px;
   cursor: pointer;
   color: var(--primary-color);
 }
 
-.fab:hover {
+.social-icons i:hover {
   color: var(--on-background);
 }
 
@@ -290,7 +301,7 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-.fas {
-  font-size: 30px;
+.toggle-icon i {
+  font-size: 25px;
   margin-right: 5px;
 }

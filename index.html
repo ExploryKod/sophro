@@ -8,12 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="header-nav">
+        <div class="theme-switch-wrapper">
+            <span class="toggle-icon">
+                <i class="fa-solid fa-sun"></i>
+            </span>
+            <label for="theme-switch" class="theme-switch">
+                <input title="theme-switch" id="theme-switch" type="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <nav class="header-nav" id="header-nav">
             <a href="#home">Home</a>
             <a href="#steps">Etapes</a>
             <a href="#intention">Fondements</a>
@@ -33,16 +41,16 @@
                 <h2>Vers la conscience sophronique</h2>
                 <div class="steps-container">
                     <div class="image-container">
-                        <h2>Relier corps et esprit.</h2>
-                        <img src="img/undraw_conceptual_idea_light.svg" alt="#" id="image1">
+                        <h2>Découverte du corps.</h2>
+                        <img src="img/undraw_mindfulness_sun.svg" alt="#" id="image1">
+                    </div>
+                    <div class="image-container">
+                        <h2>Découverte de l'esprit.</h2>
+                        <img src="img/undraw_mind_sun.svg" alt="#" id="image2">
                     </div>
                     <div class="image-container">
                         <h2>Relier corps et esprit.</h2>
-                        <img src="img/undraw_feeling_proud_light.svg" alt="#" id="image2">
-                    </div>
-                    <div class="image-container">
-                        <h2>Relier corps et esprit.</h2>
-                        <img src="img/undraw_proud_coder_light.svg" alt="#" id="image3">
+                        <img src="img/undraw_body_mind_sun.svg" alt="#" id="image3">
                     </div>
                 </div>
             </div>
@@ -65,9 +73,13 @@
             </div>
         </section>
         <section id="contact">
-            <div class="title-group">
-                <h1>Le fondement: l'Intentionalité</h1>
-                <h2>La conscience: force d'intégration des structures de l'être</h2>
+            <div class="social-icons">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
             </div>
         </section>
     
@@ -75,6 +87,7 @@
 
     <footer></footer>
     <!-- Script -->
+    <script src="https://kit.fontawesome.com/97ace70783.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
